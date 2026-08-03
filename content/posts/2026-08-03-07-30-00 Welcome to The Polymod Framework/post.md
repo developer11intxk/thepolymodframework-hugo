@@ -5,7 +5,6 @@ tags:
   - meta
   - hello
 summary: "In this open letter, Mustafa, the creator of the Polymod Framework and the PolyOS welcomes you to The Polymod Framework Blog."
-draft: true
 ---
 
 # Welcome to **The Polymod Framework Blog!**
