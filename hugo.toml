@@ -8,17 +8,18 @@ disableKinds = ["taxonomy", "term"]
   author = "Muhammad Mustafa Monowar"
   company = "INTxK"
   project_reference = "@2023-09-06-03-55-21 The Polymod Framework"
-  subtitle = "For the Solo, Early-Stage and Young Entrepreneurs. A modular support system for making progress under uncertain conditions."
+  subtitle_line1 = "For the Solo, Early-Stage and Young Entrepreneurs."
+  subtitle_line2 = "A modular support system for making progress under uncertain conditions."
   brand_mark = """
-         *                       
-        / \\                          
- *     /   \\     *                                           
-  \\   /  |  \\   /                
-   \\ /   |   \\ /                
-*----x----*----x----*                    
-    / \\  |  / \\                                
-   /   \\ | /   \\              
-  *     \\ /     *              
-         \\ /                                        
-          *                  
+           *
+          / \\
+   *     /   \\     *
+    \\   /  |  \\   /
+     \\ /   |   \\ /
+*-----x-----*-----x-----*
+     / \\   |   / \\
+    /   \\  |  /   \\
+   *     \\   /     *
+          \\ /
+           *
   """

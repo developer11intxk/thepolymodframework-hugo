@@ -1,5 +1,5 @@
-<header class="cli-container pb-0">
-    <div class="terminal">
+<header class="hero">
+    <div class="terminal hero-terminal">
         <div class="terminal-bar">
             <span class="terminal-dots" aria-hidden="true">
                 <span class="terminal-dot terminal-dot--red"></span>
@@ -8,12 +8,16 @@
             </span>
             <span class="terminal-title">{{ .Site.Title }} — init</span>
         </div>
-        <div class="terminal-body">
-            <p class="terminal-prompt"><span class="path">~/thepolymodframework</span> <span class="dollar">$</span> polymod --init</p>
-            <pre class="terminal-ascii">{{ .Site.Params.brand_mark }}</pre>
-            <h1 class="terminal-title-lg">{{ .Site.Title }}</h1>
-            <p class="terminal-subtitle">{{ .Site.Params.subtitle }}</p>
-            <span class="terminal-cursor" aria-hidden="true"></span>
+        <div class="terminal-body hero-body">
+            <div class="hero-grid">
+                <pre class="hero-mark">{{ .Site.Params.brand_mark }}</pre>
+                <div class="hero-copy">
+                    <h1 class="hero-title">{{ .Site.Title }}</h1>
+                    <p class="hero-sub hero-sub--1">{{ .Site.Params.subtitle_line1 }}</p>
+                    <p class="hero-sub hero-sub--2">{{ .Site.Params.subtitle_line2 }}</p>
+                    <span class="terminal-cursor" aria-hidden="true"></span>
+                </div>
+            </div>
         </div>
     </div>
 </header>
