@@ -1,0 +1,5 @@
+The Polymod Framework — sample attachment.
+
+This file lives inside the post folder and is linked from post.md with a
+relative path (./sample.txt). Hugo treats it as a page resource of the leaf
+bundle, so it publishes alongside the post.

@@ -1,0 +1,6 @@
+{{ $postsPage := site.GetPage "posts" }}
+<nav class="cli-nav" aria-label="Site">
+    <span class="cli-nav-path" aria-hidden="true">~</span>
+    <a class="cli-nav-link{{ if .IsHome }} is-active{{ end }}" href="{{ .Site.Home.RelPermalink }}">home</a>
+    <a class="cli-nav-link{{ if or (eq .Section "posts") (in (slice "taxonomy" "term") .Kind) }} is-active{{ end }}" href="{{ $postsPage.RelPermalink }}">posts</a>
+</nav>

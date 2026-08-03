@@ -2,7 +2,10 @@ baseURL = 'https://developer11intxk.github.io/thepolymodframework/'
 title = "The Polymod Framework"
 locale = "en-US"
 theme = []
-disableKinds = ["taxonomy", "term"]
+disableKinds = []
+
+[taxonomies]
+  tag = "tags"
 
 [params]
   author = "Muhammad Mustafa Monowar"

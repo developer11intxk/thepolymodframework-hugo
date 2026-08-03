@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 </head>
 <body class="antialiased selection:bg-poly-crimson selection:text-poly-card">
+    {{ partial "nav.html" . }}
     {{ partial "header.html" . }}
     <main class="cli-container flex flex-col gap-12 mt-12 mb-12">
         {{ block "main" . }}{{ end }}

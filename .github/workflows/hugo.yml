@@ -30,6 +30,10 @@ jobs:
           hugo-version: "0.164.0"
           extended: true
 
+      - name: Prepare post bundles
+        shell: pwsh
+        run: ./scripts/prepare-posts.ps1
+
       - name: Build
         run: hugo --minify
 

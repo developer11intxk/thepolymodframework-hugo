@@ -1,0 +1,19 @@
+{{ define "main" }}
+    {{ $posts := (.Pages.ByParam "node").Reverse }}
+    <div class="cli-border p-8 post-index">
+        <h1 class="text-2xl mb-6 text-poly-ink1">// Posts</h1>
+        {{ if $posts }}
+            <ol class="post-list">
+                {{ range $i, $p := $posts }}
+                    <li class="post-row">
+                        <span class="post-index-no">{{ printf "%02d" (add $i 1) }}</span>
+                        <a class="post-row-title" href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>
+                        <time class="post-row-date" datetime="{{ substr $p.Params.node 0 10 }}">{{ substr $p.Params.node 0 10 }}</time>
+                    </li>
+                {{ end }}
+            </ol>
+        {{ else }}
+            <p class="post-empty">No posts yet.</p>
+        {{ end }}
+    </div>
+{{ end }}

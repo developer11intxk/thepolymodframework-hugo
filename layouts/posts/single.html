@@ -1,0 +1,33 @@
+{{ define "main" }}
+    <article class="cli-border post-single">
+        <div class="terminal-bar">
+            <span class="terminal-dots" aria-hidden="true">
+                <span class="terminal-dot terminal-dot--red"></span>
+                <span class="terminal-dot terminal-dot--yellow"></span>
+                <span class="terminal-dot terminal-dot--green"></span>
+            </span>
+            <span class="terminal-title">{{ .Params.node }}</span>
+        </div>
+        <div class="post-single-body">
+            <header class="post-header">
+                <h1 class="post-title">{{ .Title }}</h1>
+                <div class="post-meta">
+                    <time class="post-date" datetime="{{ substr .Params.node 0 10 }}">{{ substr .Params.node 0 10 }}</time>
+                    {{ with .Params.tags }}
+                        <span class="post-tags">
+                            {{ range . }}
+                                <a class="tag-chip" href="{{ . | urlize | printf "/tags/%s/" | relURL }}">{{ . }}</a>
+                            {{ end }}
+                        </span>
+                    {{ end }}
+                </div>
+                {{ with .Params.summary }}
+                    <p class="post-summary">{{ . }}</p>
+                {{ end }}
+            </header>
+            <div class="content post-body">
+                {{ .Content }}
+            </div>
+        </div>
+    </article>
+{{ end }}
