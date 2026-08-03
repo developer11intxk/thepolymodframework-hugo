@@ -2,7 +2,7 @@
 
 A terminal-styled static site for **The Polymod Framework** — a modular support system for solo, early-stage and young entrepreneurs. Built with [Hugo](https://gohugo.io/) and deployed to GitHub Pages.
 
-**Live site:** <https://developer11intxk.github.io/thepolymodframework/>
+**Live site:** <https://intxk.github.io/thepolymodframework/>
 
 Publishing model: **push to `main` → auto-build → auto-deploy.** No build servers, no databases, no manual deployment.
 
@@ -60,7 +60,7 @@ Publishing model: **push to `main` → auto-build → auto-deploy.** No build se
 **Clone & preview**
 
 ```powershell
-git clone https://github.com/developer11intxk/thepolymodframework.git
+git clone https://github.com/INTxK/thepolymodframework.git
 cd thepolymodframework
 pwsh ./scripts/prepare-posts.ps1   # or: powershell -File ./scripts/prepare-posts.ps1
 hugo server -D                     # -D includes draft posts in the preview
