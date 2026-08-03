@@ -1,4 +1,5 @@
-baseURL = "/"
+baseURL = "https://developer11intxk.github.io/
+thepolymodframework-hugo/"
 title = "The Polymod Framework"
 languageCode = "en-us"
 theme = []
