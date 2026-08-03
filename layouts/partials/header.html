@@ -1,7 +1,19 @@
 <header class="cli-container pb-0">
-    <div class="cli-card cli-shadow flex flex-col items-center justify-center text-center">
-        <pre class="text-poly-crimson text-xs leading-tight mb-4 select-none">{{ .Site.Params.brand_mark }}</pre>
-        <h1 class="text-3xl uppercase tracking-widest text-poly-ink1">{{ .Site.Title }}</h1>
-        <p class="mt-4 text-sm text-poly-ink3 max-w-2xl mx-auto">{{ .Site.Params.subtitle }}</p>
+    <div class="terminal">
+        <div class="terminal-bar">
+            <span class="terminal-dots" aria-hidden="true">
+                <span class="terminal-dot terminal-dot--red"></span>
+                <span class="terminal-dot terminal-dot--yellow"></span>
+                <span class="terminal-dot terminal-dot--green"></span>
+            </span>
+            <span class="terminal-title">{{ .Site.Title }} — init</span>
+        </div>
+        <div class="terminal-body">
+            <p class="terminal-prompt"><span class="path">~/thepolymodframework</span> <span class="dollar">$</span> polymod --init</p>
+            <pre class="terminal-ascii">{{ .Site.Params.brand_mark }}</pre>
+            <h1 class="terminal-title-lg">{{ .Site.Title }}</h1>
+            <p class="terminal-subtitle">{{ .Site.Params.subtitle }}</p>
+            <span class="terminal-cursor" aria-hidden="true"></span>
+        </div>
     </div>
 </header>

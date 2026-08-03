@@ -4,7 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} | {{ .Site.Params.company }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "poly-canvas": "#0B120F",
+                        "poly-card": "#0F1A14",
+                        "poly-ink1": "#F2F6F3",
+                        "poly-ink2": "#C5D1CA",
+                        "poly-ink3": "#8A9990",
+                        "poly-crimson": "#7AF4B0",
+                        "poly-grid": "#1E2B23",
+                        "poly-dim": "#16211B"
+                    }
+                }
+            }
+        }
+    </script>
     {{ $style := resources.Get "css/main.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 </head>
