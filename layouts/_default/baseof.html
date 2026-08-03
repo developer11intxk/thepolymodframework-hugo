@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | {{ .Site.Params.company }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    {{ $style := resources.Get "css/main.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+</head>
+<body class="antialiased selection:bg-poly-crimson selection:text-poly-card">
+    {{ partial "header.html" . }}
+    <main class="cli-container flex flex-col gap-12 mt-12 mb-12">
+        {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer.html" . }}
+</body>
+</html>

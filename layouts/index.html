@@ -1,0 +1,13 @@
+{{ define "main" }}
+    {{ $sections := where .Site.RegularPages "Section" "sections" }}
+    {{ range $sections.ByWeight }}
+        <section class="cli-border p-6 sm:p-10 relative">
+            <div class="absolute -top-3 left-6 bg-poly-canvas px-2 text-xs uppercase tracking-widest text-poly-crimson">
+                // {{ .Title }}
+            </div>
+            <div class="prose prose-invert max-w-none prose-p:text-poly-ink2 prose-headings:text-poly-ink1 prose-a:text-poly-crimson">
+                {{ .Content }}
+            </div>
+        </section>
+    {{ end }}
+{{ end }}

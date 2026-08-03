@@ -1,0 +1,24 @@
+baseURL = "/"
+title = "The Polymod Framework"
+languageCode = "en-us"
+theme = []
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  author = "Muhammad Mustafa Monowar"
+  company = "INTxK"
+  project_reference = "@2023-09-06-03-55-21 The Polymod Framework"
+  subtitle = "For the Solo, Early-Stage and Young Entrepreneurs. A modular support system for making progress under uncertain conditions."
+  brand_mark = """
+         *                       
+        / \\                          
+ *     /   \\     *                                           
+  \\   /  |  \\   /                
+   \\ /   |   \\ /                
+*----x----*----x----*                    
+    / \\  |  / \\                                
+   /   \\ | /   \\              
+  *     \\ /     *              
+         \\ /                                        
+          *                  
+  """
